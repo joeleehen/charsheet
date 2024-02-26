@@ -1,0 +1,158 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "personal_info": {
+      "type": "object",
+      "properties": {
+        "class": {
+          "type": "string"
+        },
+        "level": {
+          "type": "integer"
+        },
+        "xp": {
+          "type": "integer"
+        },
+        "race": {
+          "type": "string"
+        },
+        "languages": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "class",
+        "level",
+        "race",
+        "languages"
+      ]
+    },
+    "proficiency_bonus": {
+      "type": "integer"
+    },
+    "stats": {
+      "type": "object",
+      "properties": {
+        "STR": {
+          "type": "integer"
+        },
+        "DEX": {
+          "type": "integer"
+        },
+        "CON": {
+          "type": "integer"
+        },
+        "INT": {
+          "type": "integer"
+        },
+        "WIS": {
+          "type": "integer"
+        },
+        "CHA": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "STR",
+        "DEX",
+        "CON",
+        "INT",
+        "WIS",
+        "CHA"
+      ]
+    },
+    "initiative_bonus": {
+      "type": "integer"
+    },
+    "AC": {
+      "type": "integer"
+    },
+    "HP": {
+      "type": "object",
+      "properties": {
+        "current": {
+          "type": "integer"
+        },
+        "max": {
+          "type": "integer"
+        },
+        "temp": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "current",
+        "max",
+        "temp"
+      ]
+    },
+    "inventory": {
+      "type": "object",
+      "properties": {
+        "gold": {
+          "type": "integer"
+        },
+        "items": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "weight": {
+                  "type": "integer"
+                },
+                "quantity": {
+                  "type": "integer"
+                },
+                "notes": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "quantity"
+              ]
+            }
+          ],
+          "minItems": 0
+        }
+      },
+      "required": [
+        "gold",
+        "items"
+      ]
+    },
+    "notes": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        }
+      ]
+    }
+  },
+  "required": [
+    "name",
+    "personal_info",
+    "proficiency_bonus",
+    "stats",
+    "initiative_bonus",
+    "AC",
+    "HP",
+    "inventory"
+  ]
+}
