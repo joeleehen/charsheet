@@ -1,0 +1,10 @@
+- No spot for multiclassing
+- No spot for subclasses
+- No spot for spells
+- TUI should have an option to display either level or XP AND level depending on milestone or xp play
+- Advantage/disadvantage on saving throws could be marked
+- Skills (acrobatics, intimidation, persuasion, etc.)
+- inspiration
+- defenses and conditions
+- Walking speed
+- 

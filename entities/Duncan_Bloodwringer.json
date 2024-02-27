@@ -1,0 +1,70 @@
+{
+  "name": "Duncan Bloodwringer",
+  "personal_info": {
+    "class": "cleric",
+    "level": 4,
+    "xp": 4500,
+    "race": "half-orc",
+    "languages": [
+      "common",
+      "Draconic",
+      "Giant",
+      "Orc"
+    ]
+  },
+  "proficiency_bonus": 2,
+  "stats": {
+    "STR": 14,
+    "DEX": 15,
+    "CON": 19,
+    "INT": 19,
+    "WIS": 8,
+    "CHA": 8
+  },
+  "initiative_bonus": 2,
+  "AC": 16,
+  "HP": {
+    "current": 22,
+    "max": 34,
+    "temp": 0
+  },
+  "inventory": {
+    "gold": 176,
+    "items": [
+      {
+        "name": "Belt of Dwarvenkind",
+        "quantity": 1
+      },
+      {
+        "name": "Charm of Feather Falling",
+        "quantity": 1,
+        "notes": "x x x"
+      },
+      {
+        "name": "Hawthorne Wand",
+        "quantity": 1,
+        "notes": "+1 to anything magical, +1d2 damage to spells"
+      },
+      {
+        "name": "Potion of Healing",
+        "weight": 1,
+        "quantity": 2
+      },
+      {
+        "name": "Scale Mail",
+        "weight": 45,
+        "quantity": 1,
+        "notes": "AC 14, disadvantage on stealth checks"
+      },
+      {
+        "name": "Staff",
+        "weight": 4,
+        "quantity": 1
+      }
+    ]
+  },
+  "notes": [
+    "FEAT: War Caster",
+    "FEAT: Moderately Armored"
+  ]
+}
